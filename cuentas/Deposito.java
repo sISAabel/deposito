@@ -26,9 +26,13 @@ public class Deposito {
     saldoActual = cuenta1.estado();
     System.out.println("El saldo actual es " + saldoActual);
   }
+  
+  /**
+   * Este método engloba las operaciones de ingreso y retiro
+   * @param cuenta1 
+   */
 
   private static void operaciones(CCuenta cuenta1) {
-    // Operaciones de ingreso y retiro
     cuenta1.retirar(2300);
     cuenta1.ingresar(685);
   }
